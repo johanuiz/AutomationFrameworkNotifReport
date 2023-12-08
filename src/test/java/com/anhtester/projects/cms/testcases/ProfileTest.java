@@ -11,7 +11,7 @@ public class ProfileTest extends BaseTest {
     public void TC_UpdateProfile() {
         ExcelHelpers excel = new ExcelHelpers();
         excel.setExcelFile(FrameworkConstants.EXCEL_CMS_LOGIN, "Login");
-        getLoginPageCMS().loginSuccessWithCustomerAccount(excel.getCellData(4, "email"), excel.getCellData(4, "password"));
+        getLoginPageNotif().loginSuccessWithCustomerAccount(excel.getCellData(4, "email"), excel.getCellData(4, "password"));
         getProfilePage().updateProfile();
     }
 
@@ -27,7 +27,7 @@ public class ProfileTest extends BaseTest {
     public void TC_AddNewAddress() {
         ExcelHelpers excel = new ExcelHelpers();
         excel.setExcelFile(FrameworkConstants.EXCEL_CMS_LOGIN, "Login");
-        getLoginPageCMS().loginSuccessWithCustomerAccount(excel.getCellData(4, "email"), excel.getCellData(4, "password"));
+        getLoginPageNotif().loginSuccessWithCustomerAccount(excel.getCellData(4, "email"), excel.getCellData(4, "password"));
         getProfilePage().addNewAddress();
     }
 }

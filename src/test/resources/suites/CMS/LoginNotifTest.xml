@@ -9,7 +9,7 @@
     <test name="Login Test CMS" parallel="methods">
         <parameter name="BROWSER" value="edge"/>
         <classes>
-            <class name="com.anhtester.projects.cms.testcases.LoginTest"/>
+            <class name="com.anhtester.projects.cms.testcases.LoginNotifTest"/>
         </classes>
     </test>
 

@@ -7,7 +7,7 @@
     </listeners>
     
     <test name="Tests Order Product CMS">
-        <parameter name="BROWSER" value="chrome"/>
+        <parameter name="BROWSER" value="edge"/>
         <classes>
             <class name="com.anhtester.projects.cms.testcases.OrderTest"/>
         </classes>

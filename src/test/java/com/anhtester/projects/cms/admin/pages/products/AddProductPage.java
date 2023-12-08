@@ -136,7 +136,7 @@ public class AddProductPage extends CommonPageCMS {
         WebUI.clickElement(buttonViewProduct);
         WebUI.waitForPageLoaded();
         WebUI.switchToWindowOrTabByTitle(nameProductVerify);
-        getLoginPageCMS().clickCloseAdvertisementPopup();
+        //getLoginPageNotif().clickCloseAdvertisementPopup();
         WebUI.waitForPageLoaded();
         WebUI.sleep(2);
         WebUI.verifyEquals(WebUI.getTextElement(By.xpath("//h1[normalize-space()='" + nameProductVerify + "']")).trim(), nameProductVerify, "Product name displayed wrong");

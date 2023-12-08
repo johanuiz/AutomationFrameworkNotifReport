@@ -3,6 +3,7 @@ package com.anhtester.projects.cms;
 import com.anhtester.projects.cms.admin.pages.brands.BrandPage;
 import com.anhtester.projects.cms.admin.pages.category.CategoryPage;
 import com.anhtester.projects.cms.admin.pages.logins.LoginPageCMS;
+import com.anhtester.projects.cms.admin.pages.logins.LoginPageNotif;
 import com.anhtester.projects.cms.users.pages.order.OrderPage;
 import com.anhtester.projects.cms.users.pages.products.ProductInfoPageCMS;
 import com.anhtester.projects.cms.users.pages.profiles.ProfilePage;
@@ -14,7 +15,7 @@ import static com.anhtester.keywords.WebUI.*;
 
 public class CommonPageCMS {
 
-    private LoginPageCMS loginPage;
+    private LoginPageNotif loginPage;
     private BrandPage brandPage;
     private CategoryPage categoryPage;
     private AddProductPage addProductPage;
@@ -22,11 +23,19 @@ public class CommonPageCMS {
     private ProductInfoPageCMS productInfoPage;
     private OrderPage orderPage;
 
-    public LoginPageCMS getLoginPageCMS() {
+    /*public LoginPageCMS getLoginPageCMS() {
         if (loginPage == null) {
             loginPage = new LoginPageCMS();
         }
         return loginPage;
+    }*/
+
+    public LoginPageNotif getLoginPageNotif(){
+        if (loginPage == null) {
+            loginPage = new LoginPageNotif();
+        }
+        return loginPage;
+
     }
 
     public ProfilePage getProfilePage() {
@@ -67,7 +76,7 @@ public class CommonPageCMS {
     private By buttonSave = By.xpath("//button[normalize-space()='Save']");
     private By inputSearch = By.xpath("//input[@id='search']");
     public By avatarProfile = By.xpath("//span[contains(@class,'avatar avatar-sm')]");
-    public By buttonCookies = By.xpath("//button[normalize-space()='Ok. I Understood']");
+    //public By buttonCookies = By.xpath("//button[normalize-space()='Ok. I Understood']");
 
 
     public void enterDataOnSearchDataTable(String value) {

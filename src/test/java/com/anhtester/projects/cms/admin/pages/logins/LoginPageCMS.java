@@ -30,7 +30,7 @@ public class LoginPageCMS extends CommonPageCMS {
     public void openLoginPage() {
         openWebsite(FrameworkConstants.URL_CMS_USER);
         clickElement(closeAdvertisementPopup);
-        clickElement(buttonCookies);
+        //clickElement(buttonCookies);
         clickElement(buttonLogin);
         waitForPageLoaded();
         verifyElementVisible(titleLoginPage, "Login page is NOT displayed");

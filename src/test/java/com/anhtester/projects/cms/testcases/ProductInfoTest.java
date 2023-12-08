@@ -16,7 +16,7 @@ public class ProductInfoTest extends BaseTest {
         excel.setExcelFile(FrameworkConstants.EXCEL_CMS_PRODUCTS_USER, "ProductInfo");
         ExcelHelpers excel2 = new ExcelHelpers();
         excel2.setExcelFile(FrameworkConstants.EXCEL_CMS_LOGIN, "Login");
-        getLoginPageCMS().loginSuccessWithCustomerAccount(excel2.getCellData(4, "email"), excel2.getCellData(4, "password"));
+        getLoginPageNotif().loginSuccessWithCustomerAccount(excel2.getCellData(4, "email"), excel2.getCellData(4, "password"));
         ArrayList productInfo = getProductInfoPage().productInfo(PropertiesHelpers.getValue("product_P01"));
         int lastRow = excel.getRows();
         int newRow = lastRow + 1;
