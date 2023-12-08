@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Java CI with Maven on Windows](https://github.com/anhtester/AutomationFrameworkSelenium/actions/workflows/maven.yml/badge.svg)](https://github.com/anhtester/AutomationFrameworkSelenium/actions/workflows/maven.yml)
 
-## Test Automation Framework Selenium Java with TestNG building by Anh Tester
+## Test Automation Framework Selenium Java with TestNG building by JMRD
 
 🔆 **SOME FEATURES IN FRAMEWORK**
 
